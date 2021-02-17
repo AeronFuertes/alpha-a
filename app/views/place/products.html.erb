@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MY FIRST WEBSITE </title>
+</head>
+<body>
+	<div id="page">
+    <div id="header">
+			<div>
+				<a href=" welcome.html.erb" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li class="selected">
+						<%= link_to 'home', home_path %>
+					</li>
+					<li class="menu">
+						<%= link_to 'about', about_path %>
+
+					</li>
+					<li class="menu">
+						<%= link_to 'products', products_path %>
+
+					</li>
+					<li class="menu">
+					  <%= link_to 'contacts', contacts_path %>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <h1>THIS IS OUR PRODUCTS </h1>
+	</div>
+</body>
+</html>
