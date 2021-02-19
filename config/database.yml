@@ -12,11 +12,11 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
-  database: alpha_database
+  database: dbtest
   host: localhost
   pool: 5
-  username: alphauser
-  password: alphapassword
+  username: desktop
+  password: strongpassword
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
@@ -27,9 +27,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: MyDatabase_Production
+  database: MyDatabase
   host: localhost
   pool: 5
-  username: alphauser
-  password: alphapassword
+  username: postgres
+  password: <%= ENV['MyDatabase_Password'] %>
   role: MyRole

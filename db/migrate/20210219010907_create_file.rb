@@ -1,9 +1,8 @@
 class CreateFile < ActiveRecord::Migration[6.1]
   def change
-    create_table :files do |t|
-      t.string :title
+    add_column :articles, :description, :text
+    add_column :artilces, :created_at, :datetime
+    add_column :articles, :updated_at, :datetime
 
-      t.timestamps
     end
-  end
 end
